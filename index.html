@@ -3,20 +3,27 @@
   <head>
     <title>Link in Bio</title>
     <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    <!-- Connection to Font Awesome -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins:300" rel="stylesheet">
+    <!-- Connection to font pair -->
     <style>
       body {
         padding-top: 40px;
         padding-bottom: 40px;
-        background-color: #004643;
+        background-color: #55423d;
         display: flex;
         justify-content: center;
       }
+      
       .banner-image {
         width: 128px;
         height: 128px;
         object-fit: cover;
         border-radius: 128px;
         border-style: double;
+        border-width: 5px;
+        border-color: #e78fb3;
       }
       .banner {
         display: flex;
@@ -29,9 +36,11 @@
         object-fit: cover;
       }
       .name {
-        color: #fffffe;
+        color: #fff3ec;
         display: flex;
         justify-content: center;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 24px;
       }
 
       .social-icons a {
@@ -40,24 +49,26 @@
       }
       .social-icons {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        /* Can change to space-around once more links are added */
+        color: #e78fb3;
       }
 
       .link {
-        background-color: #f9bc60;
+        background-color: #ffc0ad;
         display: flex;
         align-items: center;
         padding: 5px;
+        border-radius: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
       }
 
       .link a {
-        color: #001e1d;
+        color: #271c19;
         text-decoration: none;
         text-align: center;
         flex-grow: 1;
-      }
-      * {
-        border: thin red solid;
       }
       
       .items {
@@ -65,7 +76,7 @@
         flex-direction: column;
         gap: 30px;
         max-width: 640px;
-        flex-grow: 1
+        flex-grow: 1;
       }
     </style>
   </head>
@@ -80,10 +91,10 @@
     </div>
 
     <div class="social-icons">
-      <a href="https://github.com/canzycane" target="_blank">
+      <a href="https://github.com/canzycane" target="_blank" class="fa-brands fa-github">
         GitHub
       </a>
-      <a href="https://www.linkedin.com/in/cynthia-gutierrez-mis/" target="_blank">
+      <a href="https://www.linkedin.com/in/cynthia-gutierrez-mis/" target="_blank" class="fa-brands fa-linkedin">
         LinkedIn
       </a>
     </div>
