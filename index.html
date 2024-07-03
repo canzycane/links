@@ -8,6 +8,8 @@
         padding-top: 40px;
         padding-bottom: 40px;
         background-color: #004643;
+        display: flex;
+        justify-content: center;
       }
       .banner-image {
         width: 128px;
@@ -15,6 +17,9 @@
         object-fit: cover;
         border-radius: 128px;
         border-style: double;
+        display: flex;
+        justify-content: center;
+        /* banner isn't centering */
       }
       .thumbnail {
         width: 48px;
@@ -24,24 +29,45 @@
       }
       .name {
         color: #fffffe;
+        display: flex;
+        justify-content: center;
       }
 
       .social-icons a {
         color: #fffffe;
         text-decoration: none;
+        display: flex;
+        justify-content: center;
       }
 
       .link {
         background-color: #f9bc60;
+        display: flex;
+        align-items: center;
+        padding: 5px;
       }
 
       .link a {
         color: #001e1d;
         text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+      }
+      * {
+        border: thin red solid;
+      }
+      
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 640px;
+        flex-grow: 1
       }
     </style>
   </head>
   <body>
+    <div class="items">
     <div class="banner">
       <img src="/thumbnails/profile_pic.jpg" alt="Cynthia Gutierrez headshot" class="banner-image">
     </div>
@@ -54,7 +80,6 @@
       <a href="https://github.com/canzycane" target="_blank">
         GitHub
       </a>
-
       <a href="https://www.linkedin.com/in/cynthia-gutierrez-mis/" target="_blank">
         LinkedIn
       </a>
@@ -75,8 +100,8 @@
 
     <div class="link">
       <img src="/thumbnails/code_pic.jpg" class="thumbnail">
-
       <a target="_blank" href="https://www.zdnet.com/article/do-you-still-need-to-pay-for-antivirus-software-in-2024/">Do you still need to pay for antivirus software in 2024? — ZDNET</a>
     </div>
+  </div>
   </body>
 </html>
